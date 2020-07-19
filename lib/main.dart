@@ -30,7 +30,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-   String texto1='0.01', texto2='0.01';
+   String texto1='0.0', texto2='0.00';
 
 
   @override
@@ -145,6 +145,7 @@ class _MyHomePageState extends State<MyHomePage> {
       _tColor =Color.fromRGBO(43, 118, 0, 1);
     }
     if(texto=='x')valor='*';
+    if(texto=='=')_bColor=Color.fromRGBO(43, 118, 0, 1);
     return
      MaterialButton(
           onPressed: () {
